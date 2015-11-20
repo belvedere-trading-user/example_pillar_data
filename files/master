@@ -1,0 +1,28 @@
+
+pki_dir:  /etc/salt/pki/master
+cachedir: /var/cache/salt/master
+keep_jobs: 24
+timeout: 60
+auto_accept: True
+autosign_file: /etc/salt/autosign.conf
+
+worker_threads: 2
+gather_job_timeout: 1
+
+file_roots:
+  base:
+    - /srv/salt
+  dev:
+    - /srv/salt
+
+pillar_roots:
+  base:
+    - /srv/pillar
+  dev:
+    - /srv/pillar
+
+log_level: warning
+log_level_logfile: warning
+
+ext_pillar:
+  - service_schedules:
