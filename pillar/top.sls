@@ -1,9 +1,9 @@
 base:
   '*':
     - service.simpleservice
-    - service.service_with_defaults
-    - service.myservice
-    - service.sqlservices
+#    - service.service_with_defaults
+#    - service.myservice
+#    - service.sqlservices
 
 #{% if salt['file.file_exists']('/srv/pillar/hosts/' + grains.id + '.sls') %}
 #  '{{ grains.id }}':
